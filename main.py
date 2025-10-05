@@ -1,12 +1,12 @@
 from pydantic import BaseModel
-from situation_report_updater import SituationReportUpdater
+from situation_reporter import SituationReporter
 
 
 def main():
     topic = "Collide.ai"
     # account_list = ["Collin"]
     # analytical_lens: str = "Strategic"
-    updater = SituationReportUpdater(
+    updater = SituationReporter(
         topic=topic,
         # detail_amount=0.1,
         # account_list=account_list,

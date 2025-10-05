@@ -1,9 +1,9 @@
 from pydantic import BaseModel
-from Report import Report
+from report import Report
 from typing import List, Optional
 
 
-class SituationReportUpdater(BaseModel):
+class SituationReporter(BaseModel):
     topic: str
     # detail_amount: float
     # account_list: List[str]
