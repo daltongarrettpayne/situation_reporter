@@ -1,4 +1,3 @@
-from pydantic import BaseModel
 from situation_reporter import SituationReporter
 
 
@@ -13,8 +12,8 @@ def main():
         # analytical_lens=analytical_lens,
     )
 
-    updater.generate_report()
-    updater.print_report()
+    updater.generate()
+    updater.print()
 
 
 if __name__ == "__main__":
